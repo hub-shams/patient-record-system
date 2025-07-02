@@ -2,15 +2,16 @@ import pickle
 import os
 
 class Patient:
-    def __init__(self, patient_id, name, age, ailment):
+    def __init__(self, patient_id, name, age, gender, ailment):
         self.patient_id = patient_id
         self.name = name
         self.age = age
+        self.gender = gender
         self.ailment = ailment
 
 
     def display_info(self):
-        print(f"ID: {self.patient_id} | Name: {self.name} | Age: {self.age} Ailment: {self.ailment}")
+        print(f"ID: {self.patient_id} | Name: {self.name} | Age: {self.age} | Gender: {self.gender} | Ailment: {self.ailment}")
 
 
 class PatientRecordSystem:
@@ -66,8 +67,9 @@ def run_system():
             pid = input("Enter patient ID: ")
             name = input("Enter name: ")
             age = input("Enter age: ")
+            gender = input("Enter Gender(Male or Female): ")
             ailment = input("Enter ailment: ")
-            patient = Patient(pid, name, age, ailment)
+            patient = Patient(pid, name, age, gender, ailment)
             system.add_patient(patient)
 
         elif choice == '2':
