@@ -6,7 +6,7 @@ A beginner-level Python project that securely manages patient information using 
 
 ## 💡 Features
 
-- ✅ Add new patients with name, age, gender, and medical history
+- ✅ Add new patients with name, age, gender, and ailment
 - 🔁 Update existing patient records
 - ❌ Delete patient entries
 - 💾 Automatically saves all data to a `.pkl` file (offline-friendly)
